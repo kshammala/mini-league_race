@@ -23,6 +23,7 @@ end_pause <- 150
 #set labels
 xlab <- "FPL Manager"
 ylab <- "Points"
+caption <- "Top 25 as of GW38"
 
 #Get league infromation
 league <- get_league(leagueid=league_code)
@@ -62,7 +63,7 @@ make_barchart_race <- function(title="Title",
     geom_text(aes(label = name), hjust = -0.1) +
     labs(title = title,
          subtitle ='GW: {frame_time}', x = xlab, y = ylab) +
-    labs(caption = "Features top half as of end of GW36") +
+    labs(caption = caption) +
     theme_tufte(14,"Avenir") +
     theme(aspect.ratio = 1,legend.position = "none",
           plot.title = element_text(hjust = -0.1, size = 22),
