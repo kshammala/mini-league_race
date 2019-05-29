@@ -34,7 +34,7 @@ df<-df %>%
   slice(1:player_limit)
 
 #Create mini league data frame
-df_ind <- data.frame(nrow=14) 
+df_ind <- data.frame() 
 df_ml <- data.frame() #initalise with empty frame
 
 for (i in 1:nrow(df)){
