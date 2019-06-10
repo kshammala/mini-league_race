@@ -26,7 +26,7 @@ ylab <- "Points"
 caption <- "Top 25 as of GW38"
 
 #Get league infromation
-league <- get_league(leagueid=league_code)
+league <- get_league(leagueid=6024)
 
 #Put the key info into a data frame, keeping to a set limit of FPL players
 df<-league$standings$results
